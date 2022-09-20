@@ -25,69 +25,38 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="menu"></div>
-                <div class="container p-3">
-                    <h2>
-                        Hello, world!
-                    </h2>
-                    <p>
-                        This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-                    </p>
-                    <p>
-                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
-                    </p>
+                <div class="mt-4 p-5 bg-primary text-white rounded">
+                    <h2> Consulta CEP </h2>
+                    <p> Implementação da API ViaCEP com funções JavaScript da Bibliote JQuery</p>
+                    <p><a class="btn btn-primary btn-large" href="https://viacep.com.br/">Saiba Mais</a></p>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail First" src="https://www.layoutit.com/img/people-q-c-600-200-1.jpg" />
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Card title
-                                </h5>
-                                <p class="card-text">
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-                                </p>
-                            </div>
-                        </div>
+                <div class="container">
+                    <h3>Exemplo 1 - Consulta CEP Click do Botão</h3>
+                    <div class="mb-3 mt-3">
+                        <label for="CEP" class="form-label">CEP:</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Informe o CEP" name="cep" required style="width: 150px;">
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://www.layoutit.com/img/city-q-c-600-200-1.jpg" />
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Card title
-                                </h5>
-                                <p class="card-text">
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="mb-3 mt-3">
+                        <label for="rua" class="form-label">Logradouro:</label>
+                        <input type="text" class="form-control" id="rua" placeholder="Logradouro" name="rua">
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://www.layoutit.com/img/sports-q-c-600-200-1.jpg" />
-                            <div class="card-block">
-                                <h5 class="card-title">
-                                    Card title
-                                </h5>
-                                <p class="card-text">
-                                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                                </p>
-                                <p>
-                                    <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-                                </p>
-                            </div>
-                        </div>
+                    <div class="mb-3 mt-3">
+                        <label for="bairro" class="form-label">Bairro:</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro" name="bairro">
                     </div>
+                    <div class="mb-3 mt-3">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="cidade" name="cidade">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="estado" class="form-label">Estado:</label>
+                        <input type="text" class="form-control" id="uf" placeholder="Estado" name="uf">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="botao">Consultar</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="viacep.js"></script>
 </body>
 </html>
